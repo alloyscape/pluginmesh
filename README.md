@@ -1,14 +1,22 @@
-# pluginmesh
+# PluginMesh
 
-Plugin catalog and routing helpers for AlloyScape / SZL
+This repository is a retired scaffold. It does not contain a supported
+PluginMesh implementation, package, or public API.
 
-## Status
-Scaffold created by AlloyScape Architect Payload (GitHub phase).
+The maintained implementation lives in
+[`szl-holdings/platform`](https://github.com/szl-holdings/platform):
 
-## Rules
-- DONE = files + CI green
-- No secrets in this repo
-- Source plane: GitHub · Demo plane: Hugging Face · Runtime: Hetzner
+- [PluginMesh orchestrator skill](https://github.com/szl-holdings/platform/tree/main/skills/pluginmesh-orchestrator)
+- [plugin catalog](https://github.com/szl-holdings/platform/blob/main/data/plugins.json)
+- [MCP server](https://github.com/szl-holdings/platform/blob/main/scripts/mcp-server.mjs)
+- [catalog validator](https://github.com/szl-holdings/platform/blob/main/scripts/validate.mjs)
 
-## Next
-See org payload: `payloads/stephen-architect-2026-08-13/01-DEVELOPER-PAYLOAD.md`
+Run the canonical validation from the root of `szl-holdings/platform`:
+
+```bash
+node scripts/validate.mjs
+```
+
+The placeholder workflow was removed because this scaffold has no source or
+test target. Keep this repository archived after the retirement change is
+merged so users are directed to the maintained source.
